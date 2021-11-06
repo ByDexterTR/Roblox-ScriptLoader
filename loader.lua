@@ -3,8 +3,8 @@ local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinl
 local UI = Material.Load({
      Title = "Script Loader",
      Style = 2,
-     SizeX = 300,
-     SizeY = 500,
+     SizeX = 320,
+     SizeY = 480,
      Theme = "Dark"
 })
 
@@ -22,14 +22,14 @@ Page.Button({
 Page.Button({
 	Text = "FPS Booster",
 	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/fps-booster.lua'))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/thi/fps-booster.lua'))()
     end
 })
 
 Page.Button({
     Text = "Anti AFK GUI",
     Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/anti-afk.lua'))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/thi/anti-afk.lua'))()
     end
 })
 
@@ -62,8 +62,16 @@ Page.Button({
 })
 
 Page.Button({
+    Text = "Anime Fighters GUI - 2",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua')))()
+    end
+})
+
+
+Page.Button({
     Text = "Fishing Simulator GUI",
     Callback = function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/fishing-simulator-gui.lua')))()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/thi/fishing-simulator-gui.lua')))()
     end
 })
