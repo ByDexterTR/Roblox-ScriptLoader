@@ -1,33 +1,59 @@
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
+local Human = game:GetService("Players").LocalPlayer.Character.Humanoid
+
 local UI = Material.Load({
      Title = "Script Loader",
-     Style = 2,
-     SizeX = 320,
-     SizeY = 480,
+     Style = 1,
+     SizeX = 250,
+     SizeY = 350,
      Theme = "Dark"
 })
 
 local Page = UI.New({
-    Title = "Developed ByDexter",
+    Title = "              Game",
 })
 
-Page.Button({
+local Page2 = UI.New({
+    Title = "Tool",
+})
+
+local Page3 = UI.New({
+    Title = "Human",
+})
+
+Page3.Slider({
+	Text = 'WalkSpeed',
+	Min = 1, Max = 200, Def = 16,
+	Callback = function(v)
+		Human.WalkSpeed = v 
+	end
+})
+
+Page3.Slider({
+	Text = 'JumpPower',
+	Min = 1, Max = 200, Def = 50,
+	Callback = function(v)
+		Human.JumpPower = v 
+	end
+})
+
+Page2.Button({
 	Text = "Infinite Yield",
 	Callback = function()
 		 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end
 })
 
-Page.Button({
+Page2.Button({
 	Text = "FPS Booster",
 	Callback = function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/thi/fps-booster.lua'))()
     end
 })
 
-Page.Button({
-    Text = "Anti AFK GUI",
+Page2.Button({
+    Text = "Anti AFK",
     Callback = function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/thi/anti-afk.lua'))()
     end
