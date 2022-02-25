@@ -110,3 +110,32 @@ Page.Button({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowWalker924/ShadowWalker924/main/Main%20Magnet%20Masters%20Gui", true))()
     end
 })
+
+Page.Button({
+    Text = "Demon Soul GUI",
+    Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/purplethecolor/rblx/main/DS"))()
+    end
+})
+
+
+Page.Button({
+    Text = "Stone Mine Simulator GUI",
+    Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/7TWBE49Js4Tak7GL8iIZLCLr4M8jJHZB4HFA12K/Sog/main/Main',true))()
+    end
+})
+
+Page.Button({
+    Text = "Dunking Simulator GUI",
+    Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Run6666/dunking-simulator/main/output-ATzo.lua"))()
+    end
+})
+
+Page.Button({
+    Text = "Weapon Fighting Simulator GUI",
+    Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/7TWBE49Js4Tak7GL8iIZLCLr4M8jJHZB4HFA12K/Sog/main/wfs',true))()
+    end
+})
