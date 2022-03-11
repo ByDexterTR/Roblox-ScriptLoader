@@ -139,3 +139,10 @@ Page.Button({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/7TWBE49Js4Tak7GL8iIZLCLr4M8jJHZB4HFA12K/Sog/main/wfs',true))()
     end
 })
+
+Page.Button({
+    Text = "Anime Punching Simulator GUI",
+    Callback = function()
+		loadstring(game:HttpGet("https://cheatersoul.click/chsoulanmpnchsim"))()
+    end
+})
