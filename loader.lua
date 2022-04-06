@@ -2,14 +2,14 @@ local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinl
 
 local UI = Material.Load({
      Title = "Script Loader",
-     Style = 1,
+     Style = 2,
      SizeX = 250,
-     SizeY = 350,
+     SizeY = 400,
      Theme = "Dark"
 })
 
 UI.Banner({
-    Text = "ByDexter"
+    Text = "Discord: ByDexter#5494"
 })
 
 local Page = UI.New({
