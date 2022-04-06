@@ -1,13 +1,15 @@
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
-local Human = game:GetService("Players").LocalPlayer.Character.Humanoid
-
 local UI = Material.Load({
      Title = "Script Loader",
      Style = 1,
      SizeX = 250,
      SizeY = 350,
      Theme = "Dark"
+})
+
+UI.Banner({
+    Text = "ByDexter"
 })
 
 local Page = UI.New({
@@ -26,6 +28,7 @@ Page3.Slider({
 	Text = 'WalkSpeed',
 	Min = 1, Max = 200, Def = 16,
 	Callback = function(v)
+		local Human = game:GetService("Players").LocalPlayer.Character.Humanoid
 		Human.WalkSpeed = v 
 	end
 })
@@ -34,6 +37,7 @@ Page3.Slider({
 	Text = 'JumpPower',
 	Min = 1, Max = 200, Def = 50,
 	Callback = function(v)
+		local Human = game:GetService("Players").LocalPlayer.Character.Humanoid
 		Human.JumpPower = v 
 	end
 })
@@ -46,6 +50,21 @@ Page2.Button({
 })
 
 Page2.Button({
+	Text = "OPFinality",
+	Callback = function()
+		 loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/thi/opfinality.lua'))()
+    end
+})
+
+Page2.Button({
+	Text = "Reviz Admin",
+	Callback = function()
+		 loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/thi/reviz.lua'))()
+    end
+})
+
+
+Page2.Button({
 	Text = "FPS Booster",
 	Callback = function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/thi/fps-booster.lua'))()
@@ -56,6 +75,20 @@ Page2.Button({
     Text = "Anti AFK",
     Callback = function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/ByDexterTR/Roblox-ScriptLoader/main/thi/anti-afk.lua'))()
+    end
+})
+
+Page.Button({
+	Text = "Driving Empire GUI",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/ScriptDrivingEmuForFree/main/.Lua"))()
+    end
+})
+
+Page.Button({
+    Text = "Weapon Fighting Simulator GUI",
+    Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/uzu01/lua/main/loader.lua"))()
     end
 })
 
@@ -130,13 +163,6 @@ Page.Button({
     Text = "Dunking Simulator GUI",
     Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Run6666/dunking-simulator/main/output-ATzo.lua"))()
-    end
-})
-
-Page.Button({
-    Text = "Weapon Fighting Simulator GUI",
-    Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/7TWBE49Js4Tak7GL8iIZLCLr4M8jJHZB4HFA12K/Sog/main/wfs',true))()
     end
 })
 
